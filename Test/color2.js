@@ -1,20 +1,19 @@
-		var Links = {
+	var Links = {
          setColor:function(color){
-          $('a').css('color',color);
-          }
+            $('a').css('color',color);
+           }
          }
         var Body = {
-       	 setColor:function(color){
-        	$('body').css('color',color);
+       	  setColor:function(color){
+		$('body').css('color',color);
             },
-		 setBackgroundColor:function(color){
+	  setBackgroundColor:function(color){
             $('body').css('backgroundColor',color);
-       	 	}
-		 }
+       	    }
+	 }
         
        
         function nightDayHandler(self){
-          var target = document.querySelector('body');
           if(self.value === 'night'){
             Body.setBackgroundColor('black');
             Body.setColor('white');
