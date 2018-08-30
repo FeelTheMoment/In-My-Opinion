@@ -10,15 +10,20 @@
    h1{ font-size:45px; text-align:center; border-bottom:1px solid gray; margin:0; padding:20px;}
    ol{ border-right:1px solid gray; margin:0; padding:28px; width:110px;}
    body{ margin:0; }
+   #grid{ display:grid;  grid-template-columns: 150px 1fr;}
+   #grid ol{ padding-left:33px;}
+   #grid #article{ padding-left:25px;}
   </style>
  </head>
  <body>
    <h1><a href="Java.html">Java</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="Method.html">Method</a></li>
     <li><a href="Object_class.html">Object_class</a></li>
      <li><a href="API_Interface.html">API_Interface</a></li>
    </ol>
+   <div id="article">
 <input type="text" onkeydown="alert('key down!!')"><br>
 <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);"><br>
 <img src="https://images.unsplash.com/photo-1515215316771-2742baa337f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=34771350afee3d1f0eb9e27dfa7198a8&auto=format&fit=crop&w=500&q=60" width="200">
@@ -53,5 +58,7 @@ Formed mostly as the result of volcanic eruptions, Java is the 13th largest isla
 </div>
 <!-- 시티 설치 코드 끝 -->
 </p> 
+  </div>
+ </div>
 </body>
 </html>
