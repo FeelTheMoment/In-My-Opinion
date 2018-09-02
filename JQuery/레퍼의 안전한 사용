@@ -1,0 +1,23 @@
+레퍼의 안전한 사용
+
+$(엘리먼트) 와 jQuery(엘리먼트)는  같은 의미이지만 $를 사용하는 다른 라이브러리들과의 충돌 때문에 다음과 같은 방법을 사용한다.
+
+<script type="text/javascript">
+//$ 대신 jQuery를 사용
+jQuery('body').html('hello world');
+</script>
+
+
+
+<script type="text/javascript">
+//$를 함수의 지역변수로 선언해서 외부에 있을지 모르는 타 라이브러리의 $와의 충돌을 예방
+(function($){
+    $('body').html('hello world');
+})(jQuery)
+</script>
+
+
+제어 대상을 지정하는  방법
+
+1. jQuery( selector, [context] )
+2. jQuery( element )
