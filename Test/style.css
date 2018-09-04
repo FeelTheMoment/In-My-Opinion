@@ -1,5 +1,6 @@
 h1{ font-size:45px; text-align:center; border-bottom:1px solid gray; margin:0; padding:20px;}
-   #foo { border-right:1px solid gray; margin:0; padding:28px; width:110px;}
+   ol { border-right:1px solid gray; margin:0; padding:28px; width:110px;}
+   ul { display:inline; }
    body{ margin:0; }
    #grid{ display:grid;  grid-template-columns: 150px 1fr;}
    #grid ol{ padding-left:33px;}
@@ -7,5 +8,5 @@ h1{ font-size:45px; text-align:center; border-bottom:1px solid gray; margin:0; p
    @media(max-width:800px){
    	#grid{ display:block;}
     h1{ border-bottom:none;}
-    #foo{ border-right:none;}
+    ol{ border-right:none;}
    }
